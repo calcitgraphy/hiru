@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+  <title>Document</title>
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+
+    </style>
+</head>
+<body>
+  
+
+
+
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="100%"
+    width="auto"
+    height="auto"
+    poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ1XT-ZWub9VUensicIt1tSLNN_AX1Aj-rJg&usqp=CAU"
+    data-setup="{}"
+  >
+  <source type="application/x-mpegurl" src="https://eu10b.serverse.com:1936/8012/8012/playlist.m3u8">
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+  <script>
+    var player = videojs('my_video_1');
+    player.play();
+    </script>
+</html>
